@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:elevation="15dp"
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_card"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="#E1FFF8"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/man"
+                android:layout_width="100dp"
+                android:id="@+id/avatar_img"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/sample_avatar"
+                android:layout_height="100dp"
+                />
+            <TextView
+                android:id="@+id/card_fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="@string/full_name"/>
+            <TextView
+                android:id="@+id/card_email"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_email"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
