@@ -11,8 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var color= arrayOf("#F3FFE3","#C4FAF8","#FFFFD1","#DCD3FF","#FFCBC1","#AFF8DB")
-        var jsonData=URL("https://reqres.in/api/users?page=2").readText()
-        println(jsonData)
+        var jsonData=URL("").readText()
         val btn=findViewById<Button>(R.id.buttonString)
         btn.setOnClickListener {
             val number=(0..5).random()
