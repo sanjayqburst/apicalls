@@ -5,6 +5,8 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
+import kotlin.system.measureTimeMillis
+
 
 const val BASE_URL="https://reqres.in/api/users/"
 class ApiClient {
